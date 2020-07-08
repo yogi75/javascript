@@ -1,0 +1,14 @@
+for(var i = 0; i < 10; i++) {
+    setTimeout(function() {
+      console.log(i);  
+    }, 10);
+}
+// It will 10, ten times.
+// To fix this, use IIFE and pass i as an argument
+
+for(var i = 0; i < 10; i++) {
+    setTimeout((function(i) {
+      console.log(i);
+    })(i), 10)
+}
+// It will print number 0 to 9
