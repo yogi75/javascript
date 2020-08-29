@@ -1,1 +1,28 @@
 
+ SOLID and DRY principles
+ Atomic Design Principle, component structure.
+ How to setup project from scratch, DevOps, CI/CD ( Process flow), Docker etc…
+ AWS, Azure or GCP
+ Security – How to secure JS code, CSRF tokens, JWT, XSS
+ Performance Optimization, how to reduce http requests on page
+ Different layers of caching – Browser, client as well as server side (Redis, Akamai etc)
+ Performance Metrics – TTI (Time to Interactivity, TTFB (Time to first byte, FCP (first contentful paint), FMP (first
+meaningful paint)
+ JS design patterns, closures with use case (Prototypal inheritance)
+ Unit testing
+ Event loops, callback functions, promises etc.
+ React Hooks, use state and use effect, react component lifecycle, Prop drilling, Redux middlewares, side effects
+in React Redux.
+ RWD – HTML5, CSS, Bootstrap etc.
+ Accessibility (Aria Label, A,AA, AAA compliances, semantics, screenreaders etc)
+ Prototypical Inheritance
+  a. Using prototypes as namespaces, Immediately Invoked Function Execution
+(IIFE), Separation of variable naming is different libraries
+  b. Instantiation of Objects and how to create private variables in ‘prototypical’
+way and ‘concatenative’ way.
+
+ Scoping
+  a. Code to check concept of scope and hoisting
+  b. Difference between var, let and const (not definition, rather by code example)
+  
+ 
