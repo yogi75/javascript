@@ -1,3 +1,7 @@
+/**
+    Polyfill :- A shim that mimics future API, providing fallback functionality to older browsers
+*/
+
 // Reduce pollyfill
 
 var arr = [1,2,3,4];
