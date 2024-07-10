@@ -26,3 +26,18 @@ var obj = {
 
 const returnArrayObj = obj => Object.keys(obj).map(key=>({"key":key, ...obj[key]}));
 console.log(returnArrayObj(obj));
+
+//   Problem 2 - Given two objects
+var a = {
+    name: 'a',
+    printFn: function(){
+        console.log(this.name)
+    }
+}
+
+var b = {
+    name: 'b'
+}
+// Print b object name by calling a object printFn function
+// Answer
+a.printFn.call(b) // b
