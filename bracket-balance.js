@@ -18,24 +18,25 @@ function SearchingChallenge(str) {
 
   // code goes here  
   var result={count:0, pair:0, noBracket:0} 
-  var obj = str.split("").reduce((result, char)=>{
-    if (char == "(" || char == "{" || char == "["){
+  
+  for (let i = 0; i < str.length; i++) {
+    if (str[i] === '(' || str[i] === '{' || str[i] === '['){
       result.count++;
       result.noBracket = 1;
       if(result.count == 0){
         result.pair++;
       }
-    } else if(char == ")" || char == "}" || char == "]"){
+    }
+    if (str[i] === ')' || str[i] === '}' || str[i] === ']'){
       result.count--;
       result.noBracket = 1;
       if(result.count == 0){
         result.pair++;
       }
-    };
-  return result;
-  }, result); 
-  if(!obj.noBracket) return 1;
-  if(!obj.count) return `1 ${obj.pair}`;
+    }
+  }
+  if(!result.noBracket) return 1;
+  if(!result.count) return `1 ${result.pair}`;
   return 0;
 }
    
